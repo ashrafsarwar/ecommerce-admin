@@ -1,0 +1,14 @@
+.admin {
+  display: flex;
+  height: 90vh;
+}
+@media (max-width: 1020px) {
+  .admin {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .admin {
+    height: auto;
+  }
+}

@@ -1,0 +1,193 @@
+.adminSettings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 1000px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.adminSettings-data {
+  overflow-y: auto;
+  margin-top: 30px;
+}
+
+.adminSettings-lists,
+.adminSettings-main {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr 2fr 1fr;
+  align-items: center;
+  width: 100%;
+  color: #454545;
+  font-size: 14px;
+  font-weight: 600;
+  gap: 15px;
+}
+
+.adminSettings-main {
+  font-weight: 500;
+}
+
+.adminSettings-main .image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.adminSettings-main img {
+  cursor: pointer;
+  margin-left: 15px;
+}
+.adminSettings-lists,
+.adminSettings-main {
+  font-size: 18px;
+}
+.super {
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff; /* Change text color to white for better contrast */
+  background-color: #007bff; /* Add a professional blue background */
+  border-radius: 5px; /* Add rounded corners */
+  border: 1px solid #0056b3; /* Add a border with a darker shade of blue */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  display: inline-block; /* Ensure it doesn't take up the full width */
+  text-align: center; /* Center the text */
+}
+
+@media (max-width: 1280px) {
+  .adminSettings {
+    width: 90%;
+    padding: 10px 20px;
+    margin: 20px auto;
+  }
+
+  .adminSettings-data {
+    margin-top: 25px;
+  }
+
+  .adminSettings-main .image {
+    width: 38px;
+    height: 38px;
+  }
+
+  .adminSettings-main img {
+    width: 22px;
+  }
+
+  .adminSettings-lists,
+  .adminSettings-main {
+    font-size: 15px;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .adminSettings {
+    padding: 20px 25px;
+    margin: 20px auto;
+  }
+
+  .adminSettings-data {
+    margin-top: 20px;
+  }
+
+  .adminSettings-main .image {
+    width: 36px;
+    height: 36px;
+  }
+
+  .adminSettings-main img {
+    width: 20px;
+  }
+
+  .adminSettings-lists,
+  .adminSettings-main {
+    font-size: 13px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 860px) {
+  .adminSettings {
+    padding: 20px 20px;
+    margin: 20px auto;
+  }
+
+  .adminSettings-data {
+    margin-top: 20px;
+  }
+
+  .adminSettings-main .image {
+    width: 35px;
+    height: 35px;
+  }
+
+  .adminSettings-main img {
+    width: 20px;
+  }
+
+  .adminSettings-lists,
+  .adminSettings-main {
+    font-size: 12px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .adminSettings {
+    padding: 15px 15px;
+    margin: 15px auto;
+    max-width: 100%;
+  }
+
+  .adminSettings-data {
+    margin-top: 15px;
+  }
+
+  .adminSettings-main .image {
+    width: 30px;
+    height: 30px;
+  }
+
+  .adminSettings-main img {
+    width: 18px;
+  }
+
+  .adminSettings-lists,
+  .adminSettings-main {
+    font-size: 11px;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 350px) {
+  .adminSettings {
+    padding: 10px 10px;
+    margin: 10px auto;
+    max-width: 100%;
+  }
+
+  .adminSettings-data {
+    margin-top: 10px;
+  }
+
+  .adminSettings-main .image {
+    width: 25px;
+    height: 25px;
+  }
+
+  .adminSettings-main img {
+    width: 15px;
+  }
+
+  .adminSettings-lists,
+  .adminSettings-main {
+    font-size: 9px;
+    gap: 6px;
+  }
+}

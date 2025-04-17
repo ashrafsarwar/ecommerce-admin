@@ -1,0 +1,214 @@
+.orderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 80vw;
+  height: 100vh;
+}
+
+.ordersBox {
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.orderListHeadings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55vw; /* Slightly smaller than container */
+  background-color: #ece4d1;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 0 auto 20px auto;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+  max-width: 90vw; /* Ensures responsiveness */
+}
+
+.orderList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55vw; /* Slightly smaller than container */
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 0 auto 20px auto;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  max-width: 90vw; /* Ensures responsiveness */
+}
+
+.orderList p {
+  margin: 0 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: gray;
+}
+
+.orderListHeadings p {
+  margin: 0 30px;
+  font-size: 20px;
+}
+
+.orderList:hover {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.delivered {
+  background-color: #d4edda; /* Light green for delivered */
+  color: #155724;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.pending {
+  background-color: #f8d7da; /* Light red for pending */
+  color: #721c24; /* Dark red text */
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/* FaBoxOpen Icon Responsive Style */
+.FaBoxOpen {
+  font-size: 30px;
+  color: gray;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 1200px) {
+  .orderList,
+  .orderListHeadings {
+    width: 65vw;
+    max-width: 85vw;
+  }
+
+  .orderList p,
+  .orderListHeadings p {
+    font-size: 18px; /* Slightly smaller font */
+  }
+
+  .FaBoxOpen {
+    font-size: 28px; /* Slightly smaller icon */
+  }
+}
+
+@media (max-width: 992px) {
+  .orderList,
+  .orderListHeadings {
+    width: 75vw;
+    max-width: 85vw;
+  }
+
+  .orderList p,
+  .orderListHeadings p {
+    font-size: 16px; /* Smaller font */
+  }
+
+  .FaBoxOpen {
+    font-size: 24px; /* Smaller icon */
+  }
+}
+
+@media (max-width: 768px) {
+  .orderList,
+  .orderListHeadings {
+    width: 75vw; /* Adjusted width to be slightly smaller */
+    max-width: 90vw; /* Ensures that the width doesn't overflow */
+  }
+
+  .orderList p,
+  .orderListHeadings p {
+    font-size: 16px; /* Slightly larger font for improved readability */
+    margin: 0 15px;
+  }
+
+  .FaBoxOpen {
+    font-size: 24px; /* Adjusted icon size for mobile view */
+  }
+}
+
+@media (max-width: 660px) {
+  .orderList,
+  .orderListHeadings {
+    width: 85vw; /* Width for screens up to 660px */
+    max-width: 90vw;
+  }
+
+  .orderList p,
+  .orderListHeadings p {
+    font-size: 13px; /* Reducing font size for 660px width */
+    margin: 0 10px;
+  }
+
+  .FaBoxOpen {
+    font-size: 20px; /* Icon size for 660px width */
+  }
+}
+
+@media (max-width: 576px) {
+  .orderList,
+  .orderListHeadings {
+    width: 80vw; /* Adjusted width for screens up to 576px */
+    max-width: 90vw;
+  }
+
+  .orderList p,
+  .orderListHeadings p {
+    font-size: 12px; /* Smaller font for 576px width */
+    margin: 0 8px;
+  }
+
+  .FaBoxOpen {
+    font-size: 18px; /* Icon size for 576px width */
+  }
+}
+
+@media (max-width: 560px) {
+  .orderList,
+  .orderListHeadings {
+    width: 78vw; /* Width for screens up to 560px */
+    max-width: 88vw;
+  }
+
+  .orderList p,
+  .orderListHeadings p {
+    font-size: 11px; /* Smaller font for 560px width */
+    margin: 0 8px;
+  }
+
+  .FaBoxOpen {
+    font-size: 16px; /* Smaller icon size for 560px width */
+  }
+}
+
+@media (max-width: 460px) {
+  .orderList,
+  .orderListHeadings {
+    width: 75vw; /* Width for screens up to 460px */
+    max-width: 85vw;
+  }
+
+  .orderList p,
+  .orderListHeadings p {
+    font-size: 10px; /* Reducing font size for smaller screens */
+    margin: 0 6px;
+  }
+
+  .FaBoxOpen {
+    font-size: 14px; /* Smaller icon size for 460px width */
+  }
+}

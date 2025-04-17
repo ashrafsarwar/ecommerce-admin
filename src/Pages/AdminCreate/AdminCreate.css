@@ -1,0 +1,200 @@
+.admin-creation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
+  background-color: #f4f4f4;
+}
+
+.admin-creation-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px; /* Default max width */
+  text-align: center;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.admin-creation-fields {
+  margin-bottom: 20px;
+}
+
+.admin-creation-fields input,
+.super-admin-option select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.addProduct-fields {
+  margin-bottom: 20px;
+}
+
+.addProduct-file-upload img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.addProduct-file-upload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.super-admin-option {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.super-admin-option label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.super-admin-option select {
+  margin-left: 10px; /* Space between the label and the select dropdown */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Media queries for various screen sizes */
+
+/* 1280px */
+@media (max-width: 1280px) {
+  .admin-creation-container {
+    padding: 35px; /* Slightly reduced padding */
+  }
+}
+
+/* 1020px */
+@media (max-width: 1020px) {
+  .admin-creation-container {
+    padding: 30px;
+  }
+}
+
+/* 800px */
+@media (max-width: 800px) {
+  .admin-creation-container {
+    padding: 25px;
+  }
+}
+
+/* 600px and below */
+@media (max-width: 600px) {
+  .admin-creation {
+    padding: 0;
+  }
+
+  .admin-creation-container {
+    padding: 25px;
+    margin-top: 10px; /* Add 10px margin from the top */
+  }
+
+  .admin-creation-fields input,
+  .super-admin-option select {
+    padding: 8px; /* Reduced padding for smaller screens */
+    margin-bottom: 10px; /* Reduced margin for smaller screens */
+  }
+
+  .addProduct-fields {
+    margin-bottom: 15px; /* Reduced margin for smaller screens */
+  }
+
+  .addProduct-file-upload img {
+    width: 90px; /* Reduced size for images */
+    height: 90px; /* Reduced size for images */
+  }
+}
+
+/* 500px */
+@media (max-width: 500px) {
+  .admin-creation {
+    padding: 10px;
+  }
+
+  .admin-creation-container {
+    padding: 20px;
+    margin-top: 10px; /* Maintain 10px margin from the top */
+  }
+}
+
+/* 450px */
+@media (max-width: 450px) {
+  .admin-creation-container {
+    padding: 15px;
+    margin-top: 10px; /* Maintain 10px margin from the top */
+  }
+
+  .admin-creation-fields input,
+  .super-admin-option select {
+    padding: 8px; /* Further reduced padding */
+    margin-bottom: 10px; /* Reduced margin for smaller screens */
+  }
+
+  .addProduct-fields {
+    margin-bottom: 10px; /* Further reduced margin */
+  }
+
+  .addProduct-file-upload img {
+    width: 80px; /* Further reduced size for images */
+    height: 80px; /* Further reduced size for images */
+  }
+}
+
+/* 350px */
+@media (max-width: 350px) {
+  .admin-creation-container {
+    padding: 10px; /* Minimal padding for very small screens */
+    margin-top: 10px; /* Maintain 10px margin from the top */
+  }
+
+  .admin-creation-fields input,
+  .super-admin-option select {
+    padding: 6px; /* Minimal padding */
+    margin-bottom: 8px; /* Minimal margin */
+  }
+
+  .addProduct-fields {
+    margin-bottom: 8px; /* Minimal margin */
+  }
+
+  .addProduct-file-upload img {
+    width: 70px; /* Minimal size for images */
+    height: 70px; /* Minimal size for images */
+  }
+
+  .super-admin-option {
+    flex-direction: column; /* Stack vertically on very small screens */
+    align-items: flex-start;
+  }
+
+  .super-admin-option select {
+    margin-left: 0; /* Remove margin for smaller screens */
+    margin-top: 5px; /* Add margin top for spacing */
+  }
+}

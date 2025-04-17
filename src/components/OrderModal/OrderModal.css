@@ -1,0 +1,200 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 70vw;
+  max-width: 800px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 80vh;
+  position: relative;
+}
+
+.modal-content .close-button {
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+h2,
+h3 {
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 22px;
+}
+
+p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 16px;
+}
+
+.order-info {
+  margin-bottom: 20px;
+}
+
+.order-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.item-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.status-update {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.status-select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.update-button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+}
+
+.update-button:hover {
+  background-color: #45a049;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #555;
+}
+
+.close-button:hover {
+  color: #333;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 85vw;
+    padding: 15px;
+  }
+
+  h2,
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .status-select,
+  .update-button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-content {
+    width: 90vw;
+    padding: 10px;
+  }
+
+  h2,
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .status-select,
+  .update-button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .close-button {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 460px) {
+  .modal-content {
+    width: 95vw;
+    padding: 8px;
+  }
+
+  h2,
+  h3 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  .status-select,
+  .update-button {
+    font-size: 10px;
+    padding: 6px;
+  }
+
+  .close-button {
+    font-size: 20px;
+  }
+}

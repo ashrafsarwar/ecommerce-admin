@@ -1,0 +1,165 @@
+.profile-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.admin-text {
+  margin-left: 8px;
+}
+
+.arrow-down {
+  margin-left: 5px;
+  font-size: 12px;
+  color: #333;
+}
+
+/* Rest of your CSS for Navbar and Modal */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  box-shadow: 0 1px 3px -2px #333;
+  background-color: white;
+  margin-bottom: 1px;
+}
+
+.nav-logo {
+  width: 200px;
+}
+
+.nav-profile {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.nav-modal {
+  position: fixed;
+  top: 80px;
+  right: 30px;
+  width: 200px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.nav-modal-content {
+  padding: 10px;
+}
+
+.nav-modal-content p {
+  margin: 10px 0;
+  padding: 8px 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.nav-modal-content a {
+  text-decoration: none;
+  color: #333;
+  display: block; /* Ensures the link covers the entire paragraph area */
+}
+
+/* Ensure no underline appears on hover or active states */
+.nav-modal-content p a:hover,
+.nav-modal-content p a:focus,
+.nav-modal-content p a:active {
+  text-decoration: none;
+}
+
+.nav-modal-content p:last-child {
+  border-bottom: none;
+}
+
+.nav-modal-content p:hover {
+  background-color: #f0f0f0;
+}
+
+.profile-name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.profile-name:hover {
+  background-color: #ededed;
+}
+
+@media (max-width: 860px) {
+  .navbar {
+    padding: 17px 30px;
+  }
+
+  .nav-logo {
+    width: 150px;
+  }
+
+  .nav-profile {
+    width: 40px;
+    height: 40px;
+  }
+  .admin-text {
+    font-size: 14px;
+  }
+  .nav-modal {
+    top: 70px;
+    right: 20px;
+    width: 180px;
+  }
+}
+
+@media (max-width: 660px) {
+  .navbar {
+    padding: 15px 25px;
+  }
+
+  .nav-logo {
+    width: 150px;
+  }
+
+  .nav-profile {
+    width: 35px;
+    height: 35px;
+  }
+  .admin-text {
+    font-size: 14px;
+  }
+  .nav-modal {
+    top: 60px;
+    right: 15px;
+    width: 140px;
+  }
+  .nav-modal-content p {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}
+/* @media (max-width: 660px) {
+  .navbar {
+    padding: 15px 25px;
+  }
+
+  .nav-logo {
+    width: 130px;
+  }
+
+  .nav-profile {
+    width: 30px;
+    height: 30px;
+  }
+  .admin-text {
+    font-size: 14px;
+  }
+  .nav-modal {
+    top: 70px;
+    right: 20px;
+    width: 180px;
+  }
+} */
