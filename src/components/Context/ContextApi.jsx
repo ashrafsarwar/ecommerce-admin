@@ -12,7 +12,7 @@ export const AdminContextProvider = (props) => {
   const fetchAdmins = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:3000/admins/getadmins"
+        "https://backend-main-production.up.railway.app/admins/getadmins"
       );
       if (response.data.success) {
         setAdmins(response.data.admins);

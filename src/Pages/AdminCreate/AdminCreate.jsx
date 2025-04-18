@@ -34,17 +34,20 @@ function AdminCreate() {
       formDataWithFile.append("upload", image);
 
       // Upload image
-      const imageResponse = await fetch("http://localhost:3000/upload", {
-        method: "POST",
-        body: formDataWithFile,
-      });
+      const imageResponse = await fetch(
+        "https://backend-main-production.up.railway.app/upload",
+        {
+          method: "POST",
+          body: formDataWithFile,
+        }
+      );
       const imageData = await imageResponse.json();
 
       if (imageData.success) {
         const formDataWithoutFile = { ...formData, image: imageData.imageUrl };
 
         const res = await axios.post(
-          "http://localhost:3000/admins/signup",
+          "https://backend-main-production.up.railway.app/admins/signup",
           formDataWithoutFile
         );
 

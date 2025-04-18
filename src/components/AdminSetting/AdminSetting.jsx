@@ -27,7 +27,7 @@ function AdminSetting() {
       const { email, image } = adminToDelete;
       try {
         const res = await axios.post(
-          `http://localhost:3000/admins/removeadmin`,
+          `https://backend-main-production.up.railway.app/admins/removeadmin`,
           {
             email,
             filename: image,

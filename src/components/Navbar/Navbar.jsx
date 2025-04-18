@@ -14,6 +14,8 @@ function Navbar() {
   const admin = JSON.parse(localStorage.getItem("admin"));
   const superAdmin = admin?.email === "ashrafsarwar542@gmail.com";
 
+  console.log(admin?.image);
+
   return (
     <>
       <div className="navbar">

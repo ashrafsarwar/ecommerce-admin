@@ -11,14 +11,17 @@ function Orders() {
 
   const fetchPlacedOrders = async () => {
     try {
-      const response = await fetch("http://localhost:3000/orders/getOrders", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          token: localStorage.getItem("auth-token"),
-        },
-        body: JSON.stringify({}),
-      });
+      const response = await fetch(
+        "https://backend-main-production.up.railway.app/orders/getOrders",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            token: localStorage.getItem("auth-token"),
+          },
+          body: JSON.stringify({}),
+        }
+      );
 
       const data = await response.json();
 

@@ -27,7 +27,7 @@ function Login() {
     if (isChecked) {
       try {
         const res = await axios.post(
-          "http://localhost:3000/admins/signin",
+          "https://backend-main-production.up.railway.app/admins/signin",
           formData
         );
         if (res.data.success) {

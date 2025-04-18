@@ -24,7 +24,7 @@ function AddProduct() {
     const formData = new FormData();
     formData.append("upload", image);
 
-    await fetch("http://localhost:3000/upload", {
+    await fetch("https://backend-main-production.up.railway.app/upload", {
       method: "POST",
       body: formData,
     })
@@ -37,7 +37,10 @@ function AddProduct() {
     }
 
     await axios
-      .post("http://localhost:3000/products/addProduct", product)
+      .post(
+        "https://backend-main-production.up.railway.app/products/addProduct",
+        product
+      )
       .then((res) => {
         responseData = res.data;
       })

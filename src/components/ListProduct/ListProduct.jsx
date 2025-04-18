@@ -12,7 +12,9 @@ function ListProduct() {
 
   const fetchAllProducts = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/products/getproduct");
+      const res = await axios.get(
+        "https://backend-main-production.up.railway.app/products/getproduct"
+      );
       if (res.data.success) {
         setAllProducts(res.data.products);
         allProducts.reverse();
@@ -30,7 +32,7 @@ function ListProduct() {
 
     try {
       const res = await axios.post(
-        "http://localhost:3000/products/removeproduct",
+        "https://backend-main-production.up.railway.app/products/removeproduct",
         {
           id: productToDelete.id,
           filename: productToDelete.image,
@@ -58,6 +60,7 @@ function ListProduct() {
   };
 
   const handleDeleteClick = (product) => {
+    console.log(product);
     setProductToDelete(product);
     setIsModalOpen(true);
   };
